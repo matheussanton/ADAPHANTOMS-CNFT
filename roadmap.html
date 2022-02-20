@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== FAVICON ===============-->
+    <link rel="shortcut icon" href="assets/img2/coroa.png" type="image/x-icon">
+
+    <!--=============== BOXICONS ===============-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <title>ADA PHANTOMS | CNFT</title>
+</head>
+
+<body>
+
+    <style>
+        .container__roadmap {
+            min-height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 100px 0;
+
+        }
+
+        .fullroadmap {
+            background-color: rgb(5, 5, 5);
+        }
+
+        body {
+            margin: var(--header-height) 0 0 0;
+            font-family: var(--body-font);
+            font-size: var(--normal-font-size);
+            background: rgb(5, 5, 5);
+            color: var(--text-color);
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        
+    </style>
+
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header" style="background-color: #000;">
+        <nav class="nav container">
+            <a href="index" class="nav__logo">
+
+                <img src="assets/img2/coroa.png" alt="Home" class="nav__logo-img" title="Home">
+
+            </a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index" class="nav__link " title="Home">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="roadmap" class="nav__link active-link" title="Roadmap">Roadmap</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="gallery" class="nav__link" title="Team and Art">T & A</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="faq" class="nav__link" title="FAQ">FAQ</a>
+                    </li>
+                </ul>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <img src="assets/img2/coroa.png" alt="" class="nav__img">
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="https://twitter.com/adaphantoms" target="_blank" class="nav__link socials"
+                            style="height: 30px;"><i class='bx bxl-twitter'></i></a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="https://discord.gg/z3aF5DyuFW" target="_blank" class="nav__link socials"
+                            style="height: 30px;"><i class='bx bxl-discord'></i></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt'></i>
+            </div>
+
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+
+        <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img2/roadmap-mini.png">
+            <h1 class="fullroadmap__header">DETAILED ROADMAP</h1>
+            <h2 class="fullroadmap__subtitle">STUFF ABOUT CREATION, DESIGN, STORY PROGRESS.<br />including a bit about
+                technical content</h2>
+        </div>
+
+        <!--==================== Q4 2021 ====================-->
+        <section class="section about" id="about">
+
+            <div class="about__container container grid" data-aos="fade-right" data-aos-duration="1500">
+                <div class="about__data">
+                    <h3 class="date">Q1 - 2022</h3>
+                    <h2 class="section__title about__title">Introduction and<br />FIRST SEASON</h2>
+                    <!-- <p class="about__description">Illustrations that tell the stories behind the X original phantoms, how they passed away,
+                     what did they do before die and HOW it occured with our <b>guyz</b>  
+                </p>-->
+                    <ul>
+                        <li class="about__description">Illustrations about the <b>guyz</b>.</li>
+                        <li class="about__description">Introducting the hole story.</li>
+                        <li class="about__description">Working on phantoms.</li>
+                        <li class="about__description">Discord, WebPage and Twitter promotion.</li>
+                        <li class="about__description"><b>Phantoms Launch.</b></li>
+                    </ul>
+                    <button class="button__fullroadmap" style="margin-top: 2em;" id="open-modal-1"
+                        onclick="openPopup(this.id);">Read more</button>
+                </div>
+
+                <img src="assets/img2/roadmapPic1.png" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== Q42021 Q12022 ====================-->
+        <section class="section about" id="about">
+            <div class="about__container container grid" data-aos="fade-left" data-aos-duration="1500">
+                <img src="assets/img2/coroa.png" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h3 class="date">Q2 - 2022</h3>
+                    <h2 class="section__title about__title">Phantoms S1 Afterlaunch</h2>
+
+                    <ul>
+                        <li class="about__description">Art <b>Improvement</b>.</li>
+                        <li class="about__description">Start to work on <b>GUYZ LAUNCH</b>.</li>
+                        <li class="about__description">Working on phantoms S2.</li>
+                        <li class="about__description">Studying <b>fusing system</b>.</li>
+                        <li class="about__description">Giveaways, Charities and Community.</li>
+                    </ul>
+                    <button class="button__fullroadmap" style="margin-top: 2em;" id="open-modal-2"
+                        onclick="openPopup(this.id);">Read more</button>
+                </div>
+            </div>
+        </section>
+
+        <!--==================== Q1 2021 ====================-->
+        <section class="section about" id="about">
+
+            <div class="about__container container grid" data-aos="fade-right" data-aos-duration="1500">
+                <div class="about__data">
+                    <h3 class="date">Q2.2022 - Q3-2022</h3>
+                    <h2 class="section__title about__title">Simple Guyz</h2>
+                    <ul>
+                        <li class="about__description">Releasing and promoting <b>Simple Guyz</b>.</li>
+                        <li class="about__description">Working truly hard on improvement.</li>
+                        <li class="about__description">Special editions and collabs.</li>
+                        <li class="about__description"><b>Simple Guyz Launch.</b></li>
+                    </ul>
+                    <button class="button__fullroadmap" style="margin-top: 2em;" id="open-modal-3"
+                        onclick="openPopup(this.id);">Read more</button>
+                </div>
+
+                <img src="assets/img2/logo.png" style="border-radius: 1rem;" alt="" class="about__img">
+            </div>
+        </section>
+
+        <!--==================== Q2 2021 ====================-->
+        <section class="section about" id="about">
+
+            <div class="about__container container grid" data-aos="fade-left" data-aos-duration="1500">
+                <img src="assets/img2/rocket.png" style="border-radius: 1rem;" alt="" class="about__img">
+
+                <div class="about__data">
+                    <h3 class="date">Q3.2022 - Q4-2022</h3>
+                    <h2 class="section__title about__title">Phantoms S2</h2>
+                    <ul>
+                        <li class="about__description">Finishing <b>fusing API.</b></li>
+                        <li class="about__description">Putting creativity to work.</li>
+                        <li class="about__description"><b>Community</b> participation.</li>
+                        <li class="about__description"><b>Phantoms S2 LAUNCH</b></li>
+                    </ul>
+                    <button class="button__fullroadmap" style="margin-top: 2em;" id="open-modal-4"
+                        onclick="openPopup(this.id);">Read more</button>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section" id="ftr">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">
+                    <img src="assets/img2/coroa.png" alt="" class="footer__logo-img">
+                    ADA Phantoms
+                </a>
+
+                <p class="footer__description">Let's haunt the chain..<br> together.</p>
+
+                <h3 class="footer__title">Follow us</h3>
+                <div class="footer__social">
+                    <a href="https://discord.gg/z3aF5DyuFW" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-discord'></i>
+                    </a>
+                    <a href="https://twitter.com/adaphantoms" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Menu</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="index#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="index#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="index#countdown" class="footer__link">When</a>
+                    </li>
+                    <li>
+                        <a href="index#roadmap1" class="footer__link">Roadmap</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">More</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="gallery" class="footer__link">T & A</a>
+                    </li>
+                    <li>
+                        <a href="https://discord.gg/z3aF5DyuFW" class="footer__link">Discord</a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/adaphantoms" class="footer__link">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Questions</h3>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="gallery#artists" class="footer__link">Team</a>
+                    </li>
+                    <li>
+                        <a href="faq#faq" class="footer__link">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+        <center>
+            <div class="footer__content cardano-info">
+                <h3 class="footer__title">Policy ID</h3>
+
+                <ul class="cardano__infos">
+                    <li>
+                        <p href="#" class="footer__policy">65009e165afd9c8c784fb7dc432d6166cb2399ec281bce1725655417</p>
+                    </li>
+                </ul>
+            </div>
+        </center>
+
+        <span class="footer__copy">&#169; <b style="color: #3ce41b;">ADAPhantoms.</b> All rigths reserved</span>
+
+        <img src="assets/img/spiderft.png" alt="" class="footer__img-one">
+        <img src="assets/img/Balloon.png" alt="" class="footer__img-two">
+    </footer>
+
+    <!-- ================ popup 1 ================= -->
+    <div class="modal__container" id="modal-container-1">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close" onclick="closePopup('1');">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <img src="assets/img/bloodmoon.png" alt="" class="modal__img">
+
+            <h1 class="modal__title">THE STORY BEHIND</h1>
+            <p class="modal__description">How Phantoms were before passing away</p>
+
+            <p class="modal__text">FIRSTLY! WHO WERE THE GUYZ?</p>
+            <p class="modal__text">They were simple, as us, guyz whose like to enjoy their lives doing simple things,
+                but somehow, things happened..</p>
+            <br />
+            <p class="modal__text"> <b>Illustrations about "The Guyz":</b><br />
+
+                - Before passing away, our Phantoms were knew as The Simple Guyz, which will be our next project,
+                focused in our Phantoms while they were alive. You can check some artwoks about the guyz in our
+                gallery.
+                <br />
+                <br />
+                <b>Working on Phantoms:</b><br />
+
+                - Everyday our team gets reunited and discuss about our whole project in order to bring you guys the
+                best we can do. Our Artwork is constantly being improved, and we will always maintain that aspect of
+                evolution.<br />
+                <br />
+                <b>Discord, WebPage and Twitter promotion:</b><br />
+
+                - We are trying to reach the most people we can during the Q1 2022. That's when we start growing our
+                community, webpage, Discord server and Twitter.</p>
+
+            <!-- <button class="modal__button modal__button-width">
+                    View status
+                </button> -->
+
+            <button class="modal__button-link close-modal" onclick="closePopup('1');">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!-- ================ popup 2 ================= -->
+    <div class="modal__container" id="modal-container-2">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close" onclick="closePopup('2');">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <img src="assets/img2/coroa.png" alt="" class="modal__img">
+
+            <h1 class="modal__title">PHANTOMS FIRST SEASON AFTERLAUNCH</h1>
+            <p class="modal__description">What's next?</p>
+
+            <br />
+            <p class="modal__text"> <b>Art Improvement:</b><br />
+
+                We are always improving our artwork, studying new possibilities to do a better job and improve our
+                project in general, we've always done that and want to keep doing it.<br />
+                <br />
+                <b>Starting to work on Guyz Launch:</b><br />
+
+                Our next project will be the Simple Guyz, which will be based in our Phantoms while they were alive.
+                After Phantoms launch, we will start to work on the guyz while working on the Phantoms S2.<br />
+                <br />
+                <b>Working on Phantoms S2:</b><br />
+
+                As said before, we want to release a S2 of our lovely Phantoms, after S1, we'll work on that as well as
+                working on Simple Guyz.<br />
+                <br />
+                <b>Studying fusing system:</b><br />
+
+                One of our goals is to bring a fusing system to ADA Phantoms. It will demand certain time, but we'll
+                start to study and work on manners to bring that to our project.<br />
+                <br />
+                <b>Giveaways, Charities and Community:</b><br />
+
+                After S1 launch, we want to bring giveaways to our community, as well as donations to charities. We'll
+                still work on growing our community and we want you guys to stay tuned on all our next steps after S1
+                launch.<br />
+            </p>
+
+            <!-- <button class="modal__button modal__button-width">
+                    View status
+                </button> -->
+
+            <button class="modal__button-link close-modal" onclick="closePopup('2');">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- ================ popup 3 ================= -->
+    <div class="modal__container" id="modal-container-3">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close" onclick="closePopup('3');">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <img src="assets/img2/simpleguyzteste.png" alt="" class="modal__img" style="border-radius: 5rem;">
+
+            <h1 class="modal__title">SIMPLE GUYZ..? WHAT IT MEANS?</h1>
+            <p class="modal__description">Cool art, cool concept, confuse stories but simple guyz.</p>
+
+            <br />
+            <p class="modal__text"> <b>Releasing and promoting Simple Guyz:</b><br />
+
+                After Phantoms S1, we'll start to work on Simple Guyz, developing its artwork, story, socialmedias and
+                webpage.<br />
+                <br />
+                <b>Working truly hard on improvement:</b><br />
+
+                It's really important for us to bring you guys the best we can. With that in mind, we will always keep
+                improving not only the Phantoms, but also Simple Guyz and any other future projects we have in
+                mind.<br />
+                <br />
+                <b>Special editions and collabs:</b><br />
+
+
+                We like the idea of special editions, and as well as in the Phantoms, we also want to bring some special
+                Guyz, which can be easily recognized as different if compared to other ones. We want to bring collabs
+                with other projects, and grow our community and project.<br />
+                <br />
+                <b>Simple Guyz launch:</b><br />
+
+                After everything is done and our artwork gets finished, we want to launch Simple Guyz. Our goal is to
+                launch it on Q2 2022.<br />
+                <br />
+            </p>
+
+            <!-- <button class="modal__button modal__button-width">
+            View status
+        </button> -->
+
+            <button class="modal__button-link close-modal" onclick="closePopup('3');">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- ================ popup 4 ================= -->
+    <div class="modal__container" id="modal-container-4">
+        <div class="modal__content">
+            <div class="modal__close close-modal" title="Close" onclick="closePopup('4');">
+                <i class='bx bx-x'></i>
+            </div>
+
+            <img src="assets/img2/rocket.png" alt="" class="modal__img">
+
+            <h1 class="modal__title">PHANTOMS SEASON 2</h1>
+            <p class="modal__description">Season two of the cutest phantoms living on the chain</p>
+
+            <br />
+            <p class="modal__text"> <b>Finishing Fusing API:</b><br />
+
+                One of our goals is to bring the possibility to holders to fuse their phantoms and create a new one
+                based on the characteristics of the Phantoms used.<br />
+                <br />
+                <b>Putting creativity to work:</b><br />
+
+                We are always trying to create new kinds of assets and we aim to keep doing that, exerciting our
+                creativity in order to bring you guys the best we can.<br />
+                <br />
+                <b>Community participation:</b><br />
+
+
+                We want you guys to participate in all the process of Phantoms developing, after S1, we'll try to
+                collect more information from our community, like which kinds of assets they'd like to see for example,
+                in order to bring everyone an amazing S2.<br />
+                <br />
+                <b>Phantoms S2 launch:</b><br />
+
+                After all the steps and all the needed improvements, S2 will come to haunt everyone.<br />
+                <br />
+            </p>
+
+            <!-- <button class="modal__button modal__button-width">
+            View status
+        </button> -->
+
+            <button class="modal__button-link close-modal" onclick="closePopup('4');">
+                Close
+            </button>
+        </div>
+    </div>
+
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+    </a>
+
+
+    <!-- MODAL JS -->
+    <script src="assets/js/modal.js"></script>
+
+    <!--=============== SCROLL REVEAL ===============-->
+    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="assets/js/parallax/parallax.min.js"></script>
+
+
+
+
+</body>
+
+</html>

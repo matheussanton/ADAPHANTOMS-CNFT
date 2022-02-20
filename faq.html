@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--=============== FAVICON ===============-->
+  <link rel="shortcut icon" href="assets/img/COROA.png" type="image/x-icon">
+
+  <!--=============== BOXICONS ===============-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <!--=============== SWIPER CSS ===============-->
+  <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
+
+  <!--=============== CSS ===============-->
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+
+  <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+  <title>ADA PHANTOMS | CNFT</title>
+</head>
+
+<body>
+
+  <style>
+    .container__roadmap {
+      min-height: 100vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 100px 0;
+
+    }
+
+    .fullroadmap {
+      background-color: rgb(5, 5, 5);
+    }
+
+    body {
+      margin: var(--header-height) 0 0 0;
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      background: rgb(255, 255, 255);
+      color: var(--text-color);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .footer__link,
+    .footer__title,
+    .footer__description,
+    .footer__logo {
+      color: #000
+    }
+  </style>
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header" style="background-color: #000;">
+    <nav class="nav container">
+      <a href="index" class="nav__logo">
+        <!-- <img src="assets/img/LOGO SEM FUNDO.png" alt="" class="nav__logo-img"> -->
+        <img src="assets/img2/coroa.png" alt="Home" class="nav__logo-img" title="Home">
+
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+
+          <li class="nav__item">
+            <a href="index" class="nav__link " title="Home">Home</a>
+          </li>
+
+          <li class="nav__item">
+            <a href="roadmap" class="nav__link" title="Roadmap">Roadmap</a>
+          </li>
+          <li class="nav__item">
+            <a href="gallery" class="nav__link " title="Team and Art">T & A</a>
+          </li>
+          <li class="nav__item">
+            <a href="faq" class="nav__link active-link" title="FAQ">FAQ</a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class='bx bx-x'></i>
+        </div>
+
+        <img src="assets/img2/coroa.png" alt="" class="nav__img">
+      </div>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="https://twitter.com/adaphantoms" target="_blank" class="nav__link socials" style="height: 30px;"><i
+                class='bx bxl-twitter'></i></a>
+          </li>
+
+          <li class="nav__item">
+            <a href="https://discord.gg/z3aF5DyuFW" target="_blank" class="nav__link socials" style="height: 30px;"><i
+                class='bx bxl-discord'></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class='bx bx-grid-alt'></i>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="main" id="main">
+
+    <div class="parallax-window" data-parallax="scroll" data-image-src="assets/img2/faq-mini.png">
+      <h1 class="fullroadmap__header" style="color: black;">FAQ</h1>
+      <h2 class="fullroadmap__subtitle" style="color: black;">Frequently Asked Questions<br />made by the
+        community,<br />It will help you to solve some doubts</h2>
+    </div>
+
+
+    <h1 class="countdown__header py-5" style="text-align: center; margin: 2rem; color: black;">QUESTIONS</h1>
+
+    <div class="container">
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne" style="background-color: black; color: white;">
+              <strong>When is it going to be launched?</strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              <strong>02.26.2022</strong>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>How do I get an ADA Phantom?</strong>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              In our mint day, which will be anounced in our discord server and social medias, a wallet address will be
+              given, as well as the ADA amount you will need to send to this address.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>What wallets can be used?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              You can use any wallet that support tokens on cardano, the "Shelley-Era" ones.<br />
+              <b style="color: #df1414;">DO NOT SEND ADA FROM EXCHANGES, ONLY FROM COMPATIBLE WALLETS.</b><br />
+              Examples of compatible wallets: <b>Daedalus, Yoroi, CC Wallet, Nami.</b>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>How many Phantoms can I buy?</strong>
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              You can buy only 1 Phantom per transaction.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingprice">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseprice" aria-expanded="false" aria-controls="collapseprice"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>How much will each phantom cost?</strong>
+            </button>
+          </h2>
+          <div id="collapseprice" class="accordion-collapse collapse" aria-labelledby="headingprice"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              39 ADA + transaction fees.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>How many Phantoms will be minted?</strong>
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              There will be 3500 Phantoms available.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingNine">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>Who are the Simple Guyz?</strong>
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              The Guyz are our Phantoms before passing away. Our next drop will be the Simple Guyz, based on ADA
+              Phantoms.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTen">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen"
+              style="background-color: rgb(218, 218, 218); color: black;">
+              <strong>Will there be a Phantoms Season 2?</strong>
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body" style="color: black;">
+              Yes, after Simple Guyz launch, we want to bring ADA Phantoms S2
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer section" id="ftr">
+    <div class="footer__container container grid">
+      <div class="footer__content">
+        <a href="#" class="footer__logo">
+          <img src="assets/img2/coroa.png" alt="" class="footer__logo-img">
+          ADA Phantoms
+        </a>
+
+        <p class="footer__description">Let's haunt the chain..<br> together.</p>
+
+        <h3 class="footer__title">Follow us</h3>
+        <div class="footer__social">
+          <a href="https://discord.gg/z3aF5DyuFW" target="_blank" class="footer__social-link">
+            <i class='bx bxl-discord'></i>
+          </a>
+          <a href="https://twitter.com/adaphantoms" target="_blank" class="footer__social-link">
+            <i class='bx bxl-twitter'></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Menu</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="index#home" class="footer__link">Home</a>
+          </li>
+          <li>
+            <a href="index#about" class="footer__link">About</a>
+          </li>
+          <li>
+            <a href="index#countdown" class="footer__link">When</a>
+          </li>
+          <li>
+            <a href="index#roadmap1" class="footer__link">Roadmap</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">More</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="gallery" class="footer__link">T & A</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/z3aF5DyuFW" class="footer__link">Discord</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/adaphantoms" class="footer__link">Twitter</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__content">
+        <h3 class="footer__title">Questions</h3>
+
+        <ul class="footer__links">
+          <li>
+            <a href="gallery#artists" class="footer__link">Team</a>
+          </li>
+          <li>
+            <a href="faq#faq" class="footer__link">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <center>
+      <div class="footer__content cardano-info">
+        <h3 class="footer__title" style="color: black;">Policy ID</h3>
+
+        <ul class="cardano__infos">
+          <li>
+            <p href="#" class="footer__policy" style="color: black;">65009e165afd9c8c784fb7dc432d6166cb2399ec281bce1725655417</p>
+          </li>
+        </ul>
+      </div>
+    </center>
+
+    <span class="footer__copy" style="color: black;">&#169; <b style="color: #3ce41b;">ADAPhantoms.</b> All rigths
+      reserved</span>
+
+    <img src="assets/img/spiderft.png" alt="" class="footer__img-one">
+    <img src="assets/img/Balloon.png" alt="" class="footer__img-two">
+  </footer>
+
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+  </a>
+
+
+  <!-- MODAL JS -->
+
+  <!--=============== MAIN JS ===============-->
+  <script src="assets/js/main.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script src="assets/js/parallax/parallax.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
+
+</body>
+
+</html>
