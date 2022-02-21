@@ -1559,9 +1559,9 @@ a.disabled {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 765px) {
   .homehero {
-    background-image: url(../img2/SITE\ MOBILE.png);
+    background-image: url(../img2/SITE\ MOBILE\ 2.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
