@@ -1572,6 +1572,28 @@ a.disabled {
   }
 }
 
+.modal__title-1 {
+  word-break: break-all;
+  justify-items: center;
+  align-items: center;
+  font-family: var(--pixel-font);
+  font-size: 1.75rem;
+  color: #000;
+  font-weight: var(--font-black);
+}
+
+@media only screen and (max-width: 770px) {
+  .modal__title-1 {
+    word-break: break-all;
+    justify-items: center;
+    align-items: center;
+    font-family: var(--pixel-font);
+    font-size: 1.15rem;
+    color: #000;
+    font-weight: var(--font-black);
+  }
+}
+
 
 
 /*----------FULL RODMAP ----------------*/
@@ -1753,13 +1775,13 @@ a.disabled {
   position: relative;
   background-color: #fff;
   text-align: center;
-  overflow-y: scroll;
+  overflow-y: visible;
   padding: 3rem 2rem 2rem;
   border-radius: .75rem;
   transition: all .3s;
   transform: translateY(10%);
   width: 70%;
-  height: 70%;
+  height: 50%;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1919,4 +1941,122 @@ a.Teamsocials:hover {
 p.home__description a {
   margin-right: 2rem;
   float: left;
+}
+
+details {
+  position: relative;
+  width: 300px;
+  margin-right: 1rem;
+}
+
+details[open] {
+  z-index: 1;
+}
+
+summary {
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: rgb(214, 214, 214);
+  list-style: none;
+}
+
+/* summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] summary:before {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  position: fixed;
+  top: 0;
+  left: 0;
+} */
+
+summary:after {
+  content: '';
+  display: inline-block;
+
+  width: .5rem;
+  height: .5rem;
+  border-bottom: 1px solid currentColor;
+  border-left: 1px solid currentColor;
+  border-bottom-left-radius: 2px;
+  transform: rotate(45deg) translate(50%, 0%);
+  transform-origin: center center;
+  transition: transform ease-in-out 100ms
+}
+
+summary:focus {
+  outline: none;
+}
+
+details[open] summary:after {
+  transform: rotate(-45deg) translate(0%, 0%);
+}
+
+ul.list {
+  width: 100%;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: calc(100% + .5rem);
+  left: 0;
+  padding: 1rem;
+  margin: 0;
+  box-sizing: border-box;
+  border-radius: 5px;
+  max-height: 200px;
+  overflow-y: visible;
+  overflow-x: hidden;
+}
+
+li.liPriceList {
+  margin: 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid transparent;
+}
+
+li.liPriceList:first-child {
+  padding-top: 0;
+}
+
+li.liPriceList:last-child {
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+/* FAKE SELECT */
+
+summary.radios {
+  counter-reset: radios;
+}
+
+input[type=radio] {
+  counter-increment: radios;
+  appearance: none;
+  display: none;
+}
+
+input[type=radio]:checked {
+  display: inline;
+}
+
+input[type=radio]:after {
+  content: attr(title);
+  display: inline;
+  font-size: 1rem;
+}
+
+ul.list {
+  counter-reset: labels;
+}
+
+label.labelPricelist {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  color: #000;
 }
