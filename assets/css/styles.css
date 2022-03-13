@@ -531,6 +531,15 @@ button2 {
   font-size: var(--small-font-size);
 }
 
+.buttonBuy2 {
+  display: inline-block;
+  cursor: pointer;
+  color: rgb(172, 112, 0);
+  padding: .5rem .75rem;
+  font-weight: var(--font-black);
+  font-size: var(--h2-font-size);
+}
+
 a.disabled {
   pointer-events: none;
   background-color: rgb(207, 207, 207);
@@ -730,6 +739,12 @@ a.disabled {
 
 .discount__img {
   width: 400px;
+  justify-self: center;
+  border-radius: .6rem;
+}
+
+.buyImg {
+  width: 100px;
   justify-self: center;
   border-radius: .6rem;
 }
@@ -1570,6 +1585,22 @@ a.disabled {
   .miniCtdownSubtitle {
     color: #000;
   }
+
+  .btnBuyMobile {
+    display: block !important;
+  }
+}
+
+.btnBuyMobile {
+  text-align: center;
+  display: none;
+  cursor: pointer;
+  background-color: rgb(172, 112, 0);
+  color: rgb(255, 255, 255);
+  padding: .5rem 1.75rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  font-size: var(--small-font-size);
 }
 
 .modal__title-1 {
@@ -1764,7 +1795,7 @@ a.disabled {
   height: 100%;
   display: grid;
   align-items: center;
-  overflow: hidden;
+  overflow-y: scroll;
   transition: all .3s;
   z-index: var(--z-modal);
   visibility: hidden;
@@ -1775,13 +1806,13 @@ a.disabled {
   position: relative;
   background-color: #fff;
   text-align: center;
-  overflow-y: visible;
+  overflow-y: scroll;
   padding: 3rem 2rem 2rem;
   border-radius: .75rem;
   transition: all .3s;
   transform: translateY(10%);
   width: 70%;
-  height: 50%;
+  height: 70%;
 }
 
 @media only screen and (max-width: 900px) {

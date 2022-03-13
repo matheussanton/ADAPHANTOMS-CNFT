@@ -88,7 +88,7 @@
         <!--==================== TOP ====================-->
         <section class="section homehero" id="home">
             <div class="logo__container container grid">
-
+                <a class="btnBuyMobile" id="btnBuyMobile" onclick="openPopup('open-modal-1');">Buy</a>
                 <!-- <img src="assets/img2/PhantomsLogo.png" alt="" class="logo__img"> -->
 
                 <!-- MINI COUNTDOWN -->
@@ -99,25 +99,25 @@
                             <div class="col countdown__content" id="days2">
                                 <div class="border border-white rounded py-2">
                                     <span class="days2 lead miniCtdownSubtitle"></span><br />
-                                    <span class="small miniCtdownSubtitle">Days</span>
+                                    <span class="small miniCtdownSubtitle">We</span>
                                 </div>
                             </div>
                             <div class="col countdown__content" id="hours2">
                                 <div class="border border-white rounded py-2">
                                     <span class="hours2 lead miniCtdownSubtitle"></span><br />
-                                    <span class="small miniCtdownSubtitle">Hours</span>
+                                    <span class="small miniCtdownSubtitle">Are</span>
                                 </div>
                             </div>
                             <div class="col countdown__content" id="minutes2">
                                 <div class="border border-white rounded py-2">
                                     <span class="minutes2 lead miniCtdownSubtitle"></span><br />
-                                    <span class="small miniCtdownSubtitle">Minutes</span>
+                                    <span class="small miniCtdownSubtitle">Minting</span>
                                 </div>
                             </div>
                             <div class="col countdown__content" id="seconds2">
                                 <div class="border border-white rounded py-2">
                                     <span class="seconds2 lead miniCtdownSubtitle"></span><br />
-                                    <span class="small miniCtdownSubtitle">Seconds</span>
+                                    <span class="small miniCtdownSubtitle">Now</span>
                                 </div>
                             </div>
                         </div>
@@ -164,35 +164,35 @@
             <div class="countdown__container container grid" style="text-align:center;">
 
                 <div class="countdownClass row" data-aos="fade-up">
-                    <p class="countdown__title">Sales Have Not Started Yet</p>
-                    <p class="countdown__subtitle">ADA Phantoms will go on sale in..</p>
+                    <p class="countdown__title">MINT IS LIVE</p>
+                    <p class="countdown__subtitle">We're currently minting, click <a class="buttonBuy2" id="Curmin" onclick="openPopup('open-modal-1');">here</a> to get yours</p>
 
-                    <div class="row my-4 w-100 m-auto countdown__data grid" id="cdtimer">
+                    <!-- <div class="row my-4 w-100 m-auto countdown__data grid" id="cdtimer">
                         <div class="col countdown__content" id="days">
                             <div class="border border-white rounded py-2">
-                                <span class="days lead home__subtitle"></span><br />
+                                <span class="days lead home__subtitle">00</span><br />
                                 <span class="small home__subtitle">Days</span>
                             </div>
                         </div>
                         <div class="col countdown__content" id="hours">
                             <div class="border border-white rounded py-2">
-                                <span class="hours lead"></span><br />
+                                <span class="hours lead">0</span><br />
                                 <span class="small home__subtitle">Hours</span>
                             </div>
                         </div>
                         <div class="col countdown__content" id="minutes">
                             <div class="border border-white rounded py-2">
-                                <span class="minutes lead"></span><br />
+                                <span class="minutes lead">00</span><br />
                                 <span class="small home__subtitle">Minutes</span>
                             </div>
                         </div>
                         <div class="col countdown__content" id="seconds">
                             <div class="border border-white rounded py-2">
-                                <span class="seconds lead"></span><br />
+                                <span class="seconds lead">00</span><br />
                                 <span class="small home__subtitle">Seconds</span>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
 
                 </div>
 
@@ -383,14 +383,12 @@
                 </div>
 
                 <center>
-                    <h1 class="modal__title">WHITELIST SALE</h1>
+                    <h1 class="modal__title">OPEN SALE</h1>
                     <p ID="mintedQTD" style="color: #000; font-size: 1.2rem;" class="modal__description mb-3">Minted: x
                         /
                         2222</p>
 
-                    <div class="col-md-2 px-md-2">
-                        <img src="images/BuddieGold.jpg" class="img-fluid rounded-circle float-start">
-                    </div>
+                        <!-- <img src="assets/img2/gif1.gif" class="buyImg"> -->
 
 
                     <h2 class="modal__title-1" style="margin-top:5vh; margin-bottom:1.5vh;">
@@ -481,18 +479,19 @@
     <script>
         var request = new XMLHttpRequest();
         request.open('GET',
-            'https://cors-anywhere.herokuapp.com/https://api.nft-maker.io/GetCounts/c9594432da90443b9ce229c91e0f6ca4/31364'
+            'https://cors-anywhere.herokuapp.com/https://api.nft-maker.io/GetCounts/c9594432da90443b9ce229c91e0f6ca4/31988'
         )
-
-
         request.setRequestHeader('Content-Type', 'application/json');
+        request.setRequestHeader('Access-Control-Allow-Origin', '*');
+        request.setRequestHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-Width, Content-Type, Accept');
+        
         var body;
 
         request.onreadystatechange = function () {
             if (this.readyState === 4) {
                 if (request.status === 200) {
                     body = JSON.parse(request.response)
-                    // mintedQTD.innerHTML = body.sold + " / 2222 phantoms sold"
+                    mintedQTD.innerHTML = body.sold + " / 2222 phantoms sold"
                     console.log(body);
                 } else {
                     console.log("Erro");
@@ -507,54 +506,54 @@
 
 
 
-        (function ($) {
+        // (function ($) {
 
-            const countdown = document.getElementById('cdtimer');
-            const dayspan = countdown.querySelector('.days');
-            const hourspan = countdown.querySelector('.hours');
-            const minspan = countdown.querySelector('.minutes');
-            const secspan = countdown.querySelector('.seconds');
+        //     const countdown = document.getElementById('cdtimer');
+        //     const dayspan = countdown.querySelector('.days');
+        //     const hourspan = countdown.querySelector('.hours');
+        //     const minspan = countdown.querySelector('.minutes');
+        //     const secspan = countdown.querySelector('.seconds');
 
-            const countdown2 = document.getElementById('cdtimer2');
-            const dayspan2 = countdown2.querySelector('.days2');
-            const hourspan2 = countdown2.querySelector('.hours2');
-            const minspan2 = countdown2.querySelector('.minutes2');
-            const secspan2 = countdown2.querySelector('.seconds2');
+        //     const countdown2 = document.getElementById('cdtimer2');
+        //     const dayspan2 = countdown2.querySelector('.days2');
+        //     const hourspan2 = countdown2.querySelector('.hours2');
+        //     const minspan2 = countdown2.querySelector('.minutes2');
+        //     const secspan2 = countdown2.querySelector('.seconds2');
 
-            var countDownDate = new Date('2022-3-04UTC20:00:00+00:00');
-            var ct = countDownDate.getTime();
-            var offset = countDownDate.getTimezoneOffset() * 60000;
+        //     var countDownDate = new Date('2022-3-04UTC21:00:00+00:00');
+        //     var ct = countDownDate.getTime();
+        //     var offset = countDownDate.getTimezoneOffset() * 60000;
 
-            var x = setInterval(function () {
-                var d = new Date();
-                var now = d.getTime();
-                var no = now + offset;
+        //     var x = setInterval(function () {
+        //         var d = new Date();
+        //         var now = d.getTime();
+        //         var no = now + offset;
 
-                var distance = ct - now;
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        //         var distance = ct - now;
+        //         var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        //         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        //         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        //         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-                dayspan.innerHTML = ('0' + days).slice(-2);
-                hourspan.innerHTML = ('0' + hours).slice(-2);
-                minspan.innerHTML = ('0' + minutes).slice(-2);
-                secspan.innerHTML = ('0' + seconds).slice(-2);
+        //         dayspan.innerHTML = ('0' + days).slice(-2);
+        //         hourspan.innerHTML = ('0' + hours).slice(-2);
+        //         minspan.innerHTML = ('0' + minutes).slice(-2);
+        //         secspan.innerHTML = ('0' + seconds).slice(-2);
 
-                dayspan2.innerHTML = ('0' + days).slice(-2);
-                hourspan2.innerHTML = ('0' + hours).slice(-2);
-                minspan2.innerHTML = ('0' + minutes).slice(-2);
-                secspan2.innerHTML = ('0' + seconds).slice(-2);
+        //         dayspan2.innerHTML = ('0' + days).slice(-2);
+        //         hourspan2.innerHTML = ('0' + hours).slice(-2);
+        //         minspan2.innerHTML = ('0' + minutes).slice(-2);
+        //         secspan2.innerHTML = ('0' + seconds).slice(-2);
 
-                if (distance <= 0) {
-                    clearInterval(x);
-                    var element = document.getElementById("open-modal-1");
-                    element.classList.remove("disabled");
-                    console.log('sale opened');
-                }
+        //         if (distance <= 0) {
+        //             clearInterval(x);
+        //             var element = document.getElementById("open-modal-1");
+        //             element.classList.remove("disabled");
+        //             console.log('sale opened');
+        //         }
 
-            }, 1000);
-        })(jQuery);
+        //     }, 1000);
+        // })(jQuery);
     </script>
 
 </body>
