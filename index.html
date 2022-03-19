@@ -384,7 +384,7 @@
 
                 <center>
                     <h1 class="modal__title">OPEN SALE</h1>
-                    <p ID="mintedQTD" style="color: #000; font-size: 1.2rem;" class="modal__description mb-3">Minted: x
+                    <p ID="mintedQTD" style="color: #000; font-size: 1.2rem;" class="modal__description mb-3">Minted: 66
                         /
                         2222</p>
 
@@ -485,22 +485,22 @@
         request.setRequestHeader('Access-Control-Allow-Origin', '*');
         request.setRequestHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-Width, Content-Type, Accept');
         
-        var body;
+        // var body;
 
-        request.onreadystatechange = function () {
-            if (this.readyState === 4) {
-                if (request.status === 200) {
-                    body = JSON.parse(request.response)
-                    mintedQTD.innerHTML = body.sold + " / 2222 phantoms sold"
-                    console.log(body);
-                } else {
-                    console.log("Erro");
-                    console.log(request);
-                }
-            }
-        };
+        // request.onreadystatechange = function () {
+        //     if (this.readyState === 4) {
+        //         if (request.status === 200) {
+        //             body = JSON.parse(request.response)
+        //             mintedQTD.innerHTML = body.sold + " / 2222 phantoms sold"
+        //             console.log(body);
+        //         } else {
+        //             console.log("Erro");
+        //             console.log(request);
+        //         }
+        //     }
+        // };
 
-        request.send();
+        // request.send();
 
 
 
